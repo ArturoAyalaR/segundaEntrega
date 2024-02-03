@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poor+Story&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+/**header**/
+
+.bg-head {
+    background-color: #7a91d1;
+
+}
+
+/**footer**/
+.footer-container {
+    text-align: center;
+    background-color: #7a91d1;
+    color: white;
+    bottom: 0;
+    flex: 1;
+}
+
+
+
+.insta-logo a,
+i {
+    color: white;
+    justify-content: end;
+}
+
+
+
+/*index**/
+
+.bg-main {
+    background-color: #46a591;
+}
+
+.main-info {
+    display: flex;
+    flex-direction: center;
+    text-align: center;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+}
+
+
+.main-content {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    margin: 20px;
+    background-color: #46a591
+}
+
+.main-content img {
+    flex: 1;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+
+}
+
+.main-content h2,
+p {
+    margin: 5px;
+}
+
+.main-content:hover {
+    background-color: #40A2E3;
+    box-shadow: 2px 2px 2px;
+    transition: 0.5s;
+}
+
+.main-content:hover p {
+    background-color: #40A2E3;
+    transition: 0.5s;
+
+}
+
+.main-content:hover h2 {
+    background-color: #40A2E3;
+    transition: 0.5s;
+
+}
+
+
+.main-last {
+    padding: 20px;
+    text-align: center;
+    color: #40A2E3;
+    text-shadow: 2px 2px 2px;
+}
+
+/**contacto**/
+.form-container {
+    background-image: url(../assets/images/tapbeerjpg.jpg);
+    background-size: cover;
+    padding: 30px;
+    margin: 50px;
+    border: 2px solid gray;
+    opacity: 0.9;
+    height: 600px;
+}
+
+.textarea {
+    height: 200px;
+}
+
+.form-label {
+    color: whitesmoke;
+}
+
+.btn primary {
+    background-color: rgb(0, 0, 0);
+}
+
+/*Aboutus*/
+
+.aboutus {
+    height: 623px;
+    background-color: rgb(143, 148, 155);
+}
+
+.titulo-aboutus {
+    padding: 15px;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+
+.aboutus-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 20px;
+    color: balck;
+    background-color: beige;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.aboutus-container p {
+    justify-content: center;
+}
+
+.aboutus-container img {
+    flex: 1;
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+
+}
+
+/**proceso**/
+
+.main-process {
+    background-image: url('../assets/images/homebeer.jpg');
+    background-size: cover;
+    height: 623px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+
+}
+
+.process-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.422);
+}
+
+.process-content p {
+    width: 60%;
+    color: white;
+}
+
+.process-content h3 {
+    width: 60%;
+    color: white;
+    padding: 10px;
+}
+
+
+/*Productos*/
+
+.main-productos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 20px;
+}
+
+.carousel {
+    margin: 200px;
+}
+
+.carousel-item {
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+
+
+/*Vista mobil*/
+@media (max-width:768px) {
+    .main-info {
+        display: flex;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .footer-container {
+        font-size: 15px;
+
+    }
+
+    .form-container {
+        height: 700px;
+        width: auto;
+        margin: 2 0px;
+    }
+
+    .form-container,
+    .form-control {
+        text-align: center;
+    }
+
+    .textarea {
+        height: 300px;
+    }
+
+    .aboutus-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 10px;
+        margin: 10px;
+        color: white;
+        background-color: #3887BE;
+        justify-content: center;
+        border-radius: 5px;
+    }
+
+    .aboutus-container img {
+        width: 100%;
+    }
+
+    .process-content iframe {
+        width: 360px;
+        height: 215px;
+
+    }
+
+
+}
+
+/**vista tablet**/
+@media (max-width:1024px) {
+    .main-info {
+        display: flex;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .textarea {
+        height: 300px;
+    }
+
+}
